@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Navbar from './navbar';
+import Navbar from './Navbar';
 
 const Layout = (props) => (
     <div>
@@ -8,7 +8,9 @@ const Layout = (props) => (
             <link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cerulean/bootstrap.min.css"/>
         </Head>
         <Navbar/>
-        {props.children}
+        <div className="container">
+            {props.children}
+        </div>
     </div>
 )
 
